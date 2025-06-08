@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff7e6; /* Ngjyra më e butë pane qumeshti */
+            background-color: #f7f1e1; /* Ngjyrë panë (e butë) */
             color: #333;
         }
 
@@ -23,12 +23,14 @@
             text-align: center;
             color: #6a4c3c;
             font-size: 3em;
+            margin-bottom: 30px;
         }
 
         .menu-section {
             margin-top: 30px;
             padding: 20px;
             border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hije për kategori */
         }
 
         .menu-section h2 {
@@ -36,6 +38,7 @@
             color: #fff;
             text-align: center;
             padding: 10px;
+            background-color: #6a4c3c; /* Ngjyra për titujt */
             border-radius: 8px;
         }
 
@@ -43,7 +46,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 0;
+            padding: 15px 10px;
             border-bottom: 1px solid #ddd;
         }
 
@@ -52,11 +55,14 @@
         }
 
         .menu-item img {
-            width: 80px;
-            height: 80px;
+            width: 100px;
+            height: 100px;
             object-fit: cover;
-            margin-left: 20px;
             border-radius: 50%;
+        }
+
+        .menu-item span {
+            font-size: 1.2em;
         }
 
         footer {
@@ -90,6 +96,27 @@
         .pije {
             background-color: #c2c2f0; /* Ngjyrë për pije */
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #6a4c3c;
+            color: white;
+        }
+
+        td {
+            background-color: #fff7e6;
+        }
     </style>
 </head>
 <body>
@@ -99,115 +126,99 @@
         <!-- Sushi Section -->
         <div class="menu-section sushi">
             <h2>Sushi</h2>
-            <div class="menu-item">
-    <span>Sushi Crispy</span>
-    <span>2000 lekë</span>
-    <img src="https://knifeandsoul.com/wp-content/uploads/2022/09/crunchy-roll-sushi-recipe-recipe-card.jpg" alt="Sushi Crispy">
-</div>
-
-            </div>
-            <div class="menu-item">
-                <div class="menu-item">
-    <span>Sushi Avocado</span>
-    <span>1200 lekë</span>
-    <img src="https://www.sbfoods-worldwide.com/recipes/q78eit00000004lp-img/5_Dragonroll_Wasabi_ichiran.jpg" alt="Sushi Avocado">
-</div>
-
-            <div class="menu-item">
-               <div class="menu-item">
-    <span>Rainbow Sushi</span>
-    <span>2500 lekë</span>
-    <img src="https://freshchoice.imgix.net/assets/recipes/1805-sushi-rainbow-rolls.jpg?&ch=Width,DPR&fit=crop&auto=format%2C%20compress&q=70" alt="Rainbow Sushi">
-</div>
-
+            <table>
+                <tr>
+                    <th>Emri i Ushqimit</th>
+                    <th>Çmimi</th>
+                    <th>Foto</th>
+                </tr>
+                <tr>
+                    <td>Sushi Crispy</td>
+                    <td>2000 lekë</td>
+                    <td><img src="https://knifeandsoul.com/wp-content/uploads/2022/09/crunchy-roll-sushi-recipe-recipe-card.jpg" alt="Sushi Crispy"></td>
+                </tr>
+                <tr>
+                    <td>Sushi Avocado</td>
+                    <td>1200 lekë</td>
+                    <td><img src="https://www.sbfoods-worldwide.com/recipes/q78eit00000004lp-img/5_Dragonroll_Wasabi_ichiran.jpg" alt="Sushi Avocado"></td>
+                </tr>
+                <tr>
+                    <td>Rainbow Sushi</td>
+                    <td>2500 lekë</td>
+                    <td><img src="https://freshchoice.imgix.net/assets/recipes/1805-sushi-rainbow-rolls.jpg?&ch=Width,DPR&fit=crop&auto=format%2C%20compress&q=70" alt="Rainbow Sushi"></td>
+                </tr>
+            </table>
+        </div>
 
         <!-- Spaghetti Section -->
         <div class="menu-section spaghetti">
             <h2>Spagheti</h2>
-            <div class="menu-item">
-              <div class="menu-item">
-    <span>Spaghetti Pesto</span>
-    <span>1200 lekë</span>
-    <img src="https://cookingwithelo.com/wp-content/uploads/2022/06/Pasta-al-pesto.jpg" alt="Spaghetti Pesto">
-</div>
-
-            </div>
-           <div class="menu-item">
-    <span>Spaghetti Bolognese</span>
-    <span>1500 lekë</span>
-    <img src="https://www.woolworths.co.nz/Content/Recipes/230232-Classic-SpagBol_810x520.jpg" alt="Spaghetti Bolognese">
-</div>
-            </div>
+            <table>
+                <tr>
+                    <th>Emri i Ushqimit</th>
+                    <th>Çmimi</th>
+                    <th>Foto</th>
+                </tr>
+                <tr>
+                    <td>Spaghetti Pesto</td>
+                    <td>1200 lekë</td>
+                    <td><img src="https://cookingwithelo.com/wp-content/uploads/2022/06/Pasta-al-pesto.jpg" alt="Spaghetti Pesto"></td>
+                </tr>
+                <tr>
+                    <td>Spaghetti Bolognese</td>
+                    <td>1500 lekë</td>
+                    <td><img src="https://www.woolworths.co.nz/Content/Recipes/230232-Classic-SpagBol_810x520.jpg" alt="Spaghetti Bolognese"></td>
+                </tr>
+            </table>
         </div>
 
         <!-- Embëlsira Section -->
         <div class="menu-section embelsira">
             <h2>Embëlsira</h2>
-             <div class="menu-item">
-    <span>Cheesecake</span>
-    <span>2000 lekë</span>
-    <img src="https://www.jocooks.com/wp-content/uploads/2018/11/cheesecake-1-22.jpg" alt="Cheesecake">
-</div>
-
-            </div>
-            <div class="menu-item">
-    <span>Biskota (për copë)</span>
-    <span>400 lekë</span>
-    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy_choc_biscuits-59ca9be.jpg" alt="Biskota">
-</div>
-
-            </div>
-           <div class="menu-item">
-    <span>Torte</span>
-    <span>1500 lekë</span>
-    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/12/Lemon-layer-cake-d2a2df0.jpg" alt="Torte">
-</div>
-
-            </div>
-           <div class="menu-item">
-    <span>Fruta</span>
-    <span>900 lekë</span>
-    <img src="https://norsecare.co.uk/wp-content/uploads/2023/03/5-delicious-fruits-with-great-health-benefits.png" alt="Fruta">
-</div>
-
+            <table>
+                <tr>
+                    <th>Emri i Ushqimit</th>
+                    <th>Çmimi</th>
+                    <th>Foto</th>
+                </tr>
+                <tr>
+                    <td>Cheesecake</td>
+                    <td>2000 lekë</td>
+                    <td><img src="https://www.jocooks.com/wp-content/uploads/2018/11/cheesecake-1-22.jpg" alt="Cheesecake"></td>
+                </tr>
+                <tr>
+                    <td>Biskota (për copë)</td>
+                    <td>400 lekë</td>
+                    <td><img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy_choc_biscuits-59ca9be.jpg" alt="Biskota"></td>
+                </tr>
+                <tr>
+                    <td>Torte</td>
+                    <td>1500 lekë</td>
+                    <td><img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/12/Lemon-layer-cake-d2a2df0.jpg" alt="Torte"></td>
+                </tr>
+                <tr>
+                    <td>Fruta</td>
+                    <td>900 lekë</td>
+                    <td><img src="https://norsecare.co.uk/wp-content/uploads/2023/03/5-delicious-fruits-with-great-health-benefits.png" alt="Fruta"></td>
+                </tr>
+            </table>
         </div>
 
         <!-- Pije Section -->
         <div class="menu-section pije">
             <h2>Pije</h2>
-           <div class="menu-item">
-    <span>Vere e Bardhë</span>
-    <span>2500 lekë</span>
-    <img src="http://wineclub.ca/cdn/shop/articles/good-white-wine-for-a-gift_520x500_13b4f409-3baa-4b97-ab65-79d74447ddb8.jpg?v=1748480769" alt="Vere e Bardhë">
-</div>
-
-          <div class="menu-item">
-    <span>Vere e Kuqe</span>
-    <span>3000 lekë</span>
-    <img src="https://sulavineyards.com/images/media2/source-wines/source-cabernet-sauvignon.webp" alt="Vere e Kuqe">
-</div>
-
-          <div class="menu-item">
-    <span>Rosé</span>
-    <span>1000 lekë</span>
-    <img src="https://flavorfulife.com/wp-content/uploads/2024/08/Rose-Spritzer-two-glasses.jpg" alt="Rosé">
-</div>
-
-            <div class="menu-item">
-    <span>Redbull</span>
-    <span>900 lekë</span>
-    <img src="https://i.pinimg.com/736x/a3/0c/91/a30c919a565be76dd0f571501ba8d675.jpg" alt="Redbull">
-</div>
-
-            <div class="menu-item">
-                <span>Ujë</span>
-                <span>600 lekë</span>
-            </div>
-        </div>
-
-        <footer>
-            <a href="index.html">Kthehu në Home</a>
-        </footer>
-    </div>
-</body>
-</html>
+            <table>
+                <tr>
+                    <th>Emri i Pijes</th>
+                    <th>Çmimi</th>
+                    <th>Foto</th>
+                </tr>
+                <tr>
+                    <td>Vere e Bardhë</td>
+                    <td>2500 lekë</td>
+                    <td><img src="http://wineclub.ca/cdn/shop/articles/good-white-wine-for-a-gift_520x500_13b4f409-3baa-4b97-ab65-79d74447ddb8.jpg?v=1748480769" alt="Vere e Bardhë"></td>
+                </tr>
+                <tr>
+                    <td>Vere e Kuqe</td>
+                    <td>3000 lekë</td>
+                    <td><img src="https
